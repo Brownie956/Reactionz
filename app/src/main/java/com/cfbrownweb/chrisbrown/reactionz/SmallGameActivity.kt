@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.os.Message
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ToggleButton
@@ -13,15 +12,17 @@ import kotlinx.android.synthetic.main.activity_small_game.*
 
 class SmallGameActivity : AppCompatActivity() {
 
-    val DEFAULTTIME: Int = 20
-    var score: Int = 0
-    var buttons: Array<ToggleButton> = emptyArray()
-    val handler: Handler = object: Handler(Looper.getMainLooper()) {
+    private val DEFAULTTIME: Int = 20
+    private var score: Int = 0
+    private var buttons: Array<ToggleButton> = emptyArray()
+    private var remainingTime: Int = DEFAULTTIME
+    private var gameRunning: Boolean = false
+
+    private val handler: Handler = object: Handler(Looper.getMainLooper()) {
         override fun handleMessage(inputMessage: Message) {
             if(gameRunning) {
-                remainingTime -= 1
+                remainingTime--
                 timerValue.text = remainingTime.toString()
-
                 timerBar.progress = remainingTime * 5
 
                 if (remainingTime <= 0) {
@@ -31,8 +32,6 @@ class SmallGameActivity : AppCompatActivity() {
             }
         }
     }
-    private var remainingTime: Int = DEFAULTTIME
-    private var gameRunning: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,7 +64,7 @@ class SmallGameActivity : AppCompatActivity() {
         }
     }
 
-    fun updateScore() {
+    fun incrementScore() {
         score++
         scoreValue.text = score.toString()
     }
@@ -76,15 +75,28 @@ class SmallGameActivity : AppCompatActivity() {
         timerBar.progress = 100
     }
 
+    fun startTimer() {
+        val timerRunnable = Runnable {
+            while (gameRunning) {
+                Thread.sleep(1000)
+                handler.sendEmptyMessage(0)
+            }
+        }
+
+        val timerThread = Thread(timerRunnable)
+        timerThread.start()
+    }
+
     fun startGame(view: View?) {
         val startButton = view as Button
         resetScore()
+        gameRunning = true
+
+        //Update start button
         startButton.text = getString(R.string.reset_btn)
         startButton.setOnClickListener {
             resetGame(it)
         }
-
-        gameRunning = true
 
         //Trigger count down
         startTimer()
@@ -95,27 +107,17 @@ class SmallGameActivity : AppCompatActivity() {
         nextBtn.isChecked = true
     }
 
-    fun startTimer() {
-        val runnable: Runnable = Runnable {
-            while (gameRunning) {
-                Thread.sleep(1000)
-                handler.sendEmptyMessage(0)
-            }
-        }
-
-        val thread: Thread = Thread(runnable)
-        thread.start()
-    }
-
     fun resetGame(view: View?) {
         gameRunning = false
-        timerBar.progress = 100
         remainingTime = DEFAULTTIME
+        timerBar.progress = 100
         timerValue.text = DEFAULTTIME.toString()
+
         val startButton = view as Button
         startButton.text = getString(R.string.start_btn)
 
         resetButtons()
+
         startButton.setOnClickListener {
             startGame(it)
         }
@@ -136,6 +138,6 @@ class SmallGameActivity : AppCompatActivity() {
         val nextBtn = buttons.filterNot { it === toggleButton }.random()
         nextBtn.isEnabled = true
         nextBtn.isChecked = true
-        updateScore()
+        incrementScore()
     }
 }
