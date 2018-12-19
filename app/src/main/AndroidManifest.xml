@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SmallGameActivity" />
-        <activity android:name=".LargeGameActivity"></activity>
+        <activity android:name=".LargeGameActivity" />
+        <activity android:name=".MediumGameActivity" />
     </application>
 
 </manifest>

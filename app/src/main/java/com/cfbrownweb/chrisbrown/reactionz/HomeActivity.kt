@@ -16,6 +16,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        medium_game_btn.setOnClickListener {
+            val intent = Intent(this, MediumGameActivity::class.java)
+            startActivity(intent)
+        }
+
         large_game_btn.setOnClickListener {
             val intent = Intent(this, LargeGameActivity::class.java)
             startActivity(intent)

@@ -8,8 +8,8 @@
 
     <ToggleButton
         android:id="@+id/btn1_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -22,8 +22,8 @@
 
     <ToggleButton
         android:id="@+id/btn2_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -36,8 +36,8 @@
 
     <ToggleButton
         android:id="@+id/btn3_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -50,8 +50,8 @@
 
     <ToggleButton
         android:id="@+id/btn4_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -63,8 +63,8 @@
 
     <ToggleButton
         android:id="@+id/btn5_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -76,8 +76,8 @@
 
     <ToggleButton
         android:id="@+id/btn6_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -89,8 +89,8 @@
 
     <ToggleButton
         android:id="@+id/btn7_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -102,8 +102,8 @@
 
     <ToggleButton
         android:id="@+id/btn8_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -115,8 +115,8 @@
 
     <ToggleButton
         android:id="@+id/btn9_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -128,8 +128,8 @@
 
     <ToggleButton
         android:id="@+id/btn10_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -141,8 +141,8 @@
 
     <ToggleButton
         android:id="@+id/btn11_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -154,8 +154,8 @@
 
     <ToggleButton
         android:id="@+id/btn12_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -167,8 +167,8 @@
 
     <ToggleButton
         android:id="@+id/btn13_lg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
@@ -226,7 +226,7 @@
         android:id="@+id/timerLabel_lg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="60dp"
         android:text="@string/timer_label"
         app:layout_constraintBottom_toBottomOf="@+id/scoreValue_lg"
         app:layout_constraintStart_toEndOf="@+id/scoreValue_lg"

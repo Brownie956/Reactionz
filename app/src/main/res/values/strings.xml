@@ -2,6 +2,7 @@
     <string name="app_name">Reactionz</string>
     <string name="home_heading">Select your game type</string>
     <string name="small_game_btn">Small game</string>
+    <string name="medium_game_btn">Medium game</string>
     <string name="large_game_btn">Large game</string>
     <string name="score_label">Score:</string>
     <string name="start_btn">Start</string>
