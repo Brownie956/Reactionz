@@ -22,8 +22,8 @@ class SmallGameActivity : AppCompatActivity() {
         override fun handleMessage(inputMessage: Message) {
             if(gameRunning) {
                 remainingTime--
-                timerValue.text = remainingTime.toString()
-                timerBar.progress = remainingTime * 5
+                timerValue_sg.text = remainingTime.toString()
+                timerBar_sg.progress = remainingTime * 5
 
                 if (remainingTime <= 0) {
                     gameRunning = false
@@ -38,19 +38,19 @@ class SmallGameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_small_game)
 
         buttons = arrayOf(
-                btn1,
-                btn2,
-                btn3,
-                btn4,
-                btn5,
-                btn6,
-                btn7,
-                btn8,
-                btn9,
-                btn10,
-                btn11,
-                btn12,
-                btn13
+                btn1_sg,
+                btn2_sg,
+                btn3_sg,
+                btn4_sg,
+                btn5_sg,
+                btn6_sg,
+                btn7_sg,
+                btn8_sg,
+                btn9_sg,
+                btn10_sg,
+                btn11_sg,
+                btn12_sg,
+                btn13_sg
         )
 
         for (btn in buttons) {
@@ -59,20 +59,20 @@ class SmallGameActivity : AppCompatActivity() {
             }
         }
 
-        startStopButton.setOnClickListener {
+        startStopButton_sg.setOnClickListener {
             startGame(it)
         }
     }
 
     fun incrementScore() {
         score++
-        scoreValue.text = score.toString()
+        scoreValue_sg.text = score.toString()
     }
 
     fun resetScore() {
         score = 0
-        scoreValue.text = score.toString()
-        timerBar.progress = 100
+        scoreValue_sg.text = score.toString()
+        timerBar_sg.progress = 100
     }
 
     fun startTimer() {
@@ -110,8 +110,8 @@ class SmallGameActivity : AppCompatActivity() {
     fun resetGame(view: View?) {
         gameRunning = false
         remainingTime = DEFAULTTIME
-        timerBar.progress = 100
-        timerValue.text = DEFAULTTIME.toString()
+        timerBar_sg.progress = 100
+        timerValue_sg.text = DEFAULTTIME.toString()
 
         val startButton = view as Button
         startButton.text = getString(R.string.start_btn)

@@ -7,7 +7,7 @@
     tools:context=".SmallGameActivity">
 
     <ToggleButton
-        android:id="@+id/btn1"
+        android:id="@+id/btn1_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
@@ -15,12 +15,12 @@
         android:textOn=""
         android:enabled="false"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn4"
+        app:layout_constraintBottom_toTopOf="@id/btn4_sg"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btn2"/>
+        app:layout_constraintEnd_toStartOf="@id/btn2_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn2"
+        android:id="@+id/btn2_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
@@ -28,12 +28,12 @@
         android:textOn=""
         android:enabled="false"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn5"
-        app:layout_constraintStart_toEndOf="@id/btn1"
-        app:layout_constraintEnd_toStartOf="@id/btn3"/>
+        app:layout_constraintBottom_toTopOf="@id/btn5_sg"
+        app:layout_constraintStart_toEndOf="@id/btn1_sg"
+        app:layout_constraintEnd_toStartOf="@id/btn3_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn3"
+        android:id="@+id/btn3_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
@@ -41,142 +41,142 @@
         android:textOn=""
         android:enabled="false"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btn6"
-        app:layout_constraintStart_toEndOf="@id/btn2"
+        app:layout_constraintBottom_toTopOf="@id/btn6_sg"
+        app:layout_constraintStart_toEndOf="@id/btn2_sg"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ToggleButton
-        android:id="@+id/btn4"
+        android:id="@+id/btn4_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn1"
-        app:layout_constraintBottom_toTopOf="@id/btn7"
+        app:layout_constraintTop_toBottomOf="@id/btn1_sg"
+        app:layout_constraintBottom_toTopOf="@id/btn7_sg"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btn5"/>
+        app:layout_constraintEnd_toStartOf="@id/btn5_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn5"
+        android:id="@+id/btn5_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn2"
-        app:layout_constraintBottom_toTopOf="@id/btn8"
-        app:layout_constraintStart_toEndOf="@id/btn4"
-        app:layout_constraintEnd_toStartOf="@id/btn6"/>
+        app:layout_constraintTop_toBottomOf="@id/btn2_sg"
+        app:layout_constraintBottom_toTopOf="@id/btn8_sg"
+        app:layout_constraintStart_toEndOf="@id/btn4_sg"
+        app:layout_constraintEnd_toStartOf="@id/btn6_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn6"
+        android:id="@+id/btn6_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn3"
-        app:layout_constraintBottom_toTopOf="@id/btn9"
-        app:layout_constraintStart_toEndOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@id/btn3_sg"
+        app:layout_constraintBottom_toTopOf="@id/btn9_sg"
+        app:layout_constraintStart_toEndOf="@id/btn5_sg"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ToggleButton
-        android:id="@+id/btn7"
+        android:id="@+id/btn7_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn4"
+        app:layout_constraintTop_toBottomOf="@id/btn4_sg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/btn8"/>
+        app:layout_constraintEnd_toStartOf="@id/btn8_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn8"
+        android:id="@+id/btn8_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@id/btn5_sg"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn7"
-        app:layout_constraintEnd_toStartOf="@id/btn9"/>
+        app:layout_constraintStart_toEndOf="@id/btn7_sg"
+        app:layout_constraintEnd_toStartOf="@id/btn9_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn9"
+        android:id="@+id/btn9_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn6"
+        app:layout_constraintTop_toBottomOf="@id/btn6_sg"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn8"
+        app:layout_constraintStart_toEndOf="@id/btn8_sg"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ToggleButton
-        android:id="@+id/btn10"
+        android:id="@+id/btn10_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn1"
-        app:layout_constraintBottom_toTopOf="@id/btn4"
-        app:layout_constraintStart_toEndOf="@id/btn1"
-        app:layout_constraintEnd_toStartOf="@id/btn2"/>
+        app:layout_constraintTop_toBottomOf="@id/btn1_sg"
+        app:layout_constraintBottom_toTopOf="@id/btn4_sg"
+        app:layout_constraintStart_toEndOf="@id/btn1_sg"
+        app:layout_constraintEnd_toStartOf="@id/btn2_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn11"
+        android:id="@+id/btn11_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn2"
-        app:layout_constraintBottom_toTopOf="@id/btn5"
-        app:layout_constraintStart_toEndOf="@id/btn2"
-        app:layout_constraintEnd_toStartOf="@id/btn3"/>
+        app:layout_constraintTop_toBottomOf="@id/btn2_sg"
+        app:layout_constraintBottom_toTopOf="@id/btn5_sg"
+        app:layout_constraintStart_toEndOf="@id/btn2_sg"
+        app:layout_constraintEnd_toStartOf="@id/btn3_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn12"
+        android:id="@+id/btn12_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn4"
-        app:layout_constraintBottom_toTopOf="@id/btn7"
-        app:layout_constraintStart_toEndOf="@id/btn4"
-        app:layout_constraintEnd_toStartOf="@id/btn8"/>
+        app:layout_constraintTop_toBottomOf="@id/btn4_sg"
+        app:layout_constraintBottom_toTopOf="@id/btn7_sg"
+        app:layout_constraintStart_toEndOf="@id/btn4_sg"
+        app:layout_constraintEnd_toStartOf="@id/btn8_sg"/>
 
     <ToggleButton
-        android:id="@+id/btn13"
+        android:id="@+id/btn13_sg"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:background="@drawable/toggle_selector"
         android:textOff=""
         android:textOn=""
         android:enabled="false"
-        app:layout_constraintTop_toBottomOf="@id/btn5"
-        app:layout_constraintBottom_toTopOf="@id/btn8"
-        app:layout_constraintStart_toEndOf="@id/btn5"
-        app:layout_constraintEnd_toStartOf="@id/btn9"/>
+        app:layout_constraintTop_toBottomOf="@id/btn5_sg"
+        app:layout_constraintBottom_toTopOf="@id/btn8_sg"
+        app:layout_constraintStart_toEndOf="@id/btn5_sg"
+        app:layout_constraintEnd_toStartOf="@id/btn9_sg"/>
 
     <ProgressBar
-        android:id="@+id/timerBar"
+        android:id="@+id/timerBar_sg"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -189,55 +189,55 @@
         android:progress="100"/>
 
     <Button
-        android:id="@+id/startStopButton"
+        android:id="@+id/startStopButton_sg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/start_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/timerBar" />
+        app:layout_constraintTop_toBottomOf="@id/timerBar_sg" />
 
     <TextView
-        android:id="@+id/scoreLabel"
+        android:id="@+id/scoreLabel_sg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/score_label"
-        app:layout_constraintBottom_toBottomOf="@id/startStopButton"
-        app:layout_constraintStart_toEndOf="@id/startStopButton"
-        app:layout_constraintTop_toTopOf="@id/startStopButton" />
+        app:layout_constraintBottom_toBottomOf="@id/startStopButton_sg"
+        app:layout_constraintStart_toEndOf="@id/startStopButton_sg"
+        app:layout_constraintTop_toTopOf="@id/startStopButton_sg" />
 
     <TextView
-        android:id="@+id/scoreValue"
+        android:id="@+id/scoreValue_sg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/default_score"
-        app:layout_constraintBottom_toBottomOf="@id/scoreLabel"
-        app:layout_constraintStart_toEndOf="@id/scoreLabel"
-        app:layout_constraintTop_toTopOf="@id/scoreLabel" />
+        app:layout_constraintBottom_toBottomOf="@id/scoreLabel_sg"
+        app:layout_constraintStart_toEndOf="@id/scoreLabel_sg"
+        app:layout_constraintTop_toTopOf="@id/scoreLabel_sg" />
 
     <TextView
-        android:id="@+id/timerLabel"
+        android:id="@+id/timerLabel_sg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:text="@string/timer_label"
-        app:layout_constraintBottom_toBottomOf="@+id/scoreValue"
-        app:layout_constraintStart_toEndOf="@+id/scoreValue"
-        app:layout_constraintTop_toTopOf="@+id/scoreValue" />
+        app:layout_constraintBottom_toBottomOf="@+id/scoreValue_sg"
+        app:layout_constraintStart_toEndOf="@+id/scoreValue_sg"
+        app:layout_constraintTop_toTopOf="@+id/scoreValue_sg" />
 
     <TextView
-        android:id="@+id/timerValue"
+        android:id="@+id/timerValue_sg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/default_timer_label"
-        app:layout_constraintBottom_toBottomOf="@+id/timerLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/timerLabel_sg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/timerLabel"
-        app:layout_constraintTop_toTopOf="@+id/timerLabel" />
+        app:layout_constraintStart_toEndOf="@+id/timerLabel_sg"
+        app:layout_constraintTop_toTopOf="@+id/timerLabel_sg" />
 </android.support.constraint.ConstraintLayout>
