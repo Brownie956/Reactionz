@@ -6,4 +6,241 @@
     android:layout_height="match_parent"
     tools:context=".LargeGameActivity">
 
+    <ToggleButton
+        android:id="@+id/btn1_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn4_lg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn2_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn2_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn5_lg"
+        app:layout_constraintStart_toEndOf="@id/btn1_lg"
+        app:layout_constraintEnd_toStartOf="@id/btn3_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn3_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn6_lg"
+        app:layout_constraintStart_toEndOf="@id/btn2_lg"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ToggleButton
+        android:id="@+id/btn4_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn1_lg"
+        app:layout_constraintBottom_toTopOf="@id/btn7_lg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn5_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn5_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn2_lg"
+        app:layout_constraintBottom_toTopOf="@id/btn8_lg"
+        app:layout_constraintStart_toEndOf="@id/btn4_lg"
+        app:layout_constraintEnd_toStartOf="@id/btn6_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn6_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn3_lg"
+        app:layout_constraintBottom_toTopOf="@id/btn9_lg"
+        app:layout_constraintStart_toEndOf="@id/btn5_lg"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ToggleButton
+        android:id="@+id/btn7_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn4_lg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn8_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn8_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn5_lg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn7_lg"
+        app:layout_constraintEnd_toStartOf="@id/btn9_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn9_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn6_lg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn8_lg"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ToggleButton
+        android:id="@+id/btn10_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn1_lg"
+        app:layout_constraintBottom_toTopOf="@id/btn4_lg"
+        app:layout_constraintStart_toEndOf="@id/btn1_lg"
+        app:layout_constraintEnd_toStartOf="@id/btn2_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn11_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn2_lg"
+        app:layout_constraintBottom_toTopOf="@id/btn5_lg"
+        app:layout_constraintStart_toEndOf="@id/btn2_lg"
+        app:layout_constraintEnd_toStartOf="@id/btn3_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn12_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn4_lg"
+        app:layout_constraintBottom_toTopOf="@id/btn7_lg"
+        app:layout_constraintStart_toEndOf="@id/btn4_lg"
+        app:layout_constraintEnd_toStartOf="@id/btn8_lg"/>
+
+    <ToggleButton
+        android:id="@+id/btn13_lg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/toggle_selector"
+        android:textOff=""
+        android:textOn=""
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/btn5_lg"
+        app:layout_constraintBottom_toTopOf="@id/btn8_lg"
+        app:layout_constraintStart_toEndOf="@id/btn5_lg"
+        app:layout_constraintEnd_toStartOf="@id/btn9_lg"/>
+
+    <ProgressBar
+        android:id="@+id/timerBar_lg"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:progress="100"/>
+
+    <Button
+        android:id="@+id/startStopButton_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/start_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timerBar_lg" />
+
+    <TextView
+        android:id="@+id/scoreLabel_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/score_label"
+        app:layout_constraintBottom_toBottomOf="@id/startStopButton_lg"
+        app:layout_constraintStart_toEndOf="@id/startStopButton_lg"
+        app:layout_constraintTop_toTopOf="@id/startStopButton_lg" />
+
+    <TextView
+        android:id="@+id/scoreValue_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/default_score"
+        app:layout_constraintBottom_toBottomOf="@id/scoreLabel_lg"
+        app:layout_constraintStart_toEndOf="@id/scoreLabel_lg"
+        app:layout_constraintTop_toTopOf="@id/scoreLabel_lg" />
+
+    <TextView
+        android:id="@+id/timerLabel_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/timer_label"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreValue_lg"
+        app:layout_constraintStart_toEndOf="@+id/scoreValue_lg"
+        app:layout_constraintTop_toTopOf="@+id/scoreValue_lg" />
+
+    <TextView
+        android:id="@+id/timerValue_lg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/default_timer_label"
+        app:layout_constraintBottom_toBottomOf="@+id/timerLabel_lg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timerLabel_lg"
+        app:layout_constraintTop_toTopOf="@+id/timerLabel_lg" />
 </android.support.constraint.ConstraintLayout>
